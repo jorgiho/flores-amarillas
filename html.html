@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORES</title>
+    <style>
+        /* CSS Inline */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: azure;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+        .greetings {
+            font-size: 6rem;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .description {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #fbff00;
+        }
+
+        .button button {
+            background-color: yellow;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .button button:hover {
+            background-color: orange;
+            box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+        }
+
+        @media screen and (max-width: 574px) {
+            .greetings {
+                font-size: 3rem;
+                font-weight: 500;
+            }
+            .description {
+                font-size: 1rem;
+            }
+            .button button {
+                font-size: 16px; /* Ajusta el tamaño del botón en pantallas pequeñas */
+            }
+        }
+
+        /* Estilos para flores y otras animaciones */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .flower {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Estilos específicos para flores (puedes ajustarlos según tu diseño) */
+        .flower--1, .flower--2, .flower--3 {
+            /* Ejemplo de estilos para flores */
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        /* Otros estilos de flores y animaciones */
+        .grow-ans {
+            /* Animaciones y estilos para crecimiento de flores */
+        }
+    </style>
+</head>
+<body>
+    <div class="greetings">
+        <span>H</span>
+        <span>O</span>
+        <span>L</span>
+        <span>A</span>
+    </div>
+    <div class="description">
+        <span>Manu hermosa de mi corazón, ¡Tengo un regalo especial para ti!</span>
+    </div>
+    <div class="button">
+        <button>
+            <a href="FLORES.html" style="text-decoration: none; color: inherit;">Haga Clic</a>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="flower flower--1"></div>
+        <div class="flower flower--2"></div>
+        <div class="flower flower--3"></div>
+        <!-- Agrega más flores según sea necesario -->
+    </div>
+
+    <script>
+        // JavaScript Inline
+
+        // Aquí puedes agregar cualquier código JavaScript que necesites
+        // Por ejemplo, podrías agregar interacciones o animaciones
+
+        console.log("Página cargada correctamente.");
+    </script>
+</body>
+</html>
